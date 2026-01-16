@@ -1,0 +1,20 @@
+{
+    "processor_class": "GlmasrProcessor",
+    "auto_map": {
+      "AutoProcessor": "processing_glmasr.GlmasrProcessor"
+    },
+  
+    "feature_extractor_type": "WhisperFeatureExtractor",
+    "tokenizer_class": "LlamaTokenizerFast",
+  
+    "merge_factor": 4,
+    "audio_token": "<|audio|>",
+  
+    "audio_dtype": "bfloat16",
+  
+    "tokenizer_config": {
+      "padding_side": "left",
+      "model_max_length": 8192
+    }
+  }
+  

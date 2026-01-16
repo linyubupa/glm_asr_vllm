@@ -1,0 +1,38 @@
+services:
+  vllm-glmasr:
+    image: vllm-glmasr:latest
+    container_name: vllm-glmasr
+    restart: unless-stopped
+
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+    ipc: host
+    shm_size: "8gb"
+
+    ports:
+      - "8300:8300"
+
+    environment:
+      CUDA_VISIBLE_DEVICES: "2"
+
+    # 关键：用 entrypoint 固定 bash，用 command 传“完整的一条命令字符串”
+    entrypoint: ["/bin/bash", "-lc"]
+    command:
+      - >
+        vllm serve /model
+        --host 0.0.0.0
+        --port 8300
+        --served-model-name glm-asr-eligant
+        --dtype auto
+        --tensor-parallel-size 1
+        --max-model-len 4096
+        --trust-remote-code
+        --api-key EMPTY
+        --gpu-memory-utilization 0.1
+        --disable-log-stats
