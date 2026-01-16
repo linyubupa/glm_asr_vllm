@@ -345,3 +345,14 @@ This project uses the Apache 2.0 license (see [server/registry.py](server/regist
 - **vLLM**: High-performance LLM inference engine
 - **Transformers**: HuggingFace model utilities
 - **Whisper**: OpenAI audio encoder
+
+## Related Projects
+
+**[GPA - ASR, TTS and Voice Conversion in One](https://github.com/AutoArk/GPA)**
+
+A unified audio model that combines ASR (Automatic Speech Recognition), TTS (Text-to-Speech), and voice conversion in just **0.3B parameters**. This model is specifically designed for:
+- **Edge deployment**: Lightweight model suitable for mobile devices and edge computing
+- **Commercial services**: Optimized for large-scale production deployment
+- **All-in-one solution**: Single model for speech recognition, synthesis, and voice conversion
+
+If you need a more compact, multi-functional audio solution for edge or commercial scenarios, consider exploring the GPA project.
