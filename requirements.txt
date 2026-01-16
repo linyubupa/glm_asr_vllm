@@ -1,0 +1,11 @@
+loguru
+torch>=2.1.0
+torchaudio
+torchcodec
+transformers>=4.57.3
+openai
+numpy
+scipy
+librosa
+soundfile
+requests
