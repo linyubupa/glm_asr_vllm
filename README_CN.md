@@ -2,6 +2,8 @@
 
 一个集成 GLM-ASR 模型与 vLLM 的高性能语音识别（ASR）项目。本项目提供本地推理功能以及基于 Docker 的可扩展 API 服务器。
 
+本项目是对原始 [GLM-ASR 项目](https://github.com/zai-org/GLM-ASR) 的扩展/补充，增加了 vLLM 集成以支持生产环境部署和 OpenAI 兼容的 API 接口。
+
 ## 特性
 
 - **音频转写**：使用 GLM-ASR 模型对音频文件进行语音识别

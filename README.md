@@ -2,6 +2,8 @@
 
 An audio speech recognition (ASR) project that integrates the GLM-ASR model with vLLM for high-performance inference. This project provides both local inference capabilities and a scalable API server using Docker.
 
+This project is an extension/supplement to the original [GLM-ASR project](https://github.com/zai-org/GLM-ASR), adding vLLM integration for production-ready deployment and OpenAI-compatible API support.
+
 ## Features
 
 - **Audio Transcription**: Transcribe audio files using GLM-ASR model
