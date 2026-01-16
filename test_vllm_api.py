@@ -10,7 +10,7 @@ from openai import OpenAI
 OPENAI_API_KEY = "EMPTY"
 OPENAI_API_BASE = "http://0.0.0.0:8300/v1"   # 你的 vLLM server
 MODEL = "glm-asr-eligant"  # None=自动从 /v1/models 拿第一个；或手动写 "glm-asr-eligant"
-AUDIO_WAV = "/data/yumu/data/audio_data/WenetSpeech4TTS/raw_audio/WenetSpeech4TTS_Rest_8/wavs/Y0000021148_sgfFHEnLHNs_S00595.wav"
+AUDIO_WAV = "./wavs/dufu.wav"
 
 
 def load_wav_16k(path: str):
