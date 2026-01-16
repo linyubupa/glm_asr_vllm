@@ -1,5 +1,5 @@
 # Dockerfile
-FROM vllm/vllm-openai:latest
+FROM vllm/vllm-openai:v0.12.0
 
 # 目标目录（你指定的 vLLM models 路径）
 ARG VLLM_MODELS_DIR=/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models
